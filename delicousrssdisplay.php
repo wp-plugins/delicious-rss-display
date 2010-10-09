@@ -11,7 +11,6 @@ Author URI: http://blog.barbayellow.com
 // todo : widget
 // todo : check delicious username
 // todo : one delicious account per author
-// todo : repo stuff
 
 // compatibility stuffs
 global $wp_version;
@@ -73,8 +72,6 @@ function drd_deactivation() {
 
 // internationalisation
 function drd_load_plugin_textdomain() {
-	// load_plugin_textdomain( 'drd', false, 'deliciousrssdisplay/languages' );
-	// load_plugin_textdomain('drd', DRD_PATH.'/languages/');
 	load_plugin_textdomain( 'drd', false, basename(dirname(__FILE__)). '/languages' );
 }
 
@@ -162,7 +159,6 @@ function drd_options_do_page() {
 
 // get tags from delicious - daily
 function drd_get_tags() {
-	
 	global $drd_user_name;
 
 	if (!$drd_user_name) { // not usefull without username
@@ -200,7 +196,7 @@ function drd_display_rss($var="") {
 	
 	// get flux
 	if(!is_wp_error($feed)) { // flux is ok
-		$feed_items = $feed->get_items(0, $feed->get_item_quantity($endvar['max_items']) );
+		$feed_items = $feed->get_items(0, $feed->get_item_quantity($max_items) );
 		if ( !$feed_items ) {
 		    $result = '<li>no items</li>';
 		} else {
