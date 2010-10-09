@@ -14,9 +14,8 @@ If you have a delicious account and you want to display your bookmark on your bl
 
 = Plugin's Official Site =
 
-Delicious RSS display [(http://blog.barbayellow.com/delicious-rss-display)](http://blog.barbayellow.com/delicious-rss-display)
+[Delicious RSS display](http://blog.barbayellow.com/delicious-rss-display-english)
 
-* [Docs](http://blog.barbayellow.com/delicious-rss-display) - [FAQ](http://blog.barbayellow.com/delicious-rss-display) - [Support](http://blog.barbayellow.com/delicious-rss-display)
 
 = Delicous RSS display Needs Your Support =
 
