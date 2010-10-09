@@ -11,6 +11,7 @@ Author URI: http://blog.barbayellow.com
 // todo : widget
 // todo : check delicious username
 // todo : one delicious account per author
+// todo : repo stuff
 
 // compatibility stuffs
 global $wp_version;
