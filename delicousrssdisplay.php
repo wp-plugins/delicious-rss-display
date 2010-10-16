@@ -44,7 +44,7 @@ register_deactivation_hook(__FILE__, 'drd_deactivation');
 // Add cron event
 function drd_activation() {
 	if ( !wp_next_scheduled( 'drd_refresh' ) ) {
-		wp_schedule_event(time(), 'hourly', 'drd_refresh');
+		wp_schedule_event(time(), 'daily', 'drd_refresh');
 	}
 }
 
